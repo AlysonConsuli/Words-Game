@@ -51,5 +51,6 @@ table {
 body{
     font-family: 'Roboto';
     font-weight: 400;
+	background-color: #fafafa;
 }
 `;
