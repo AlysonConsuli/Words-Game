@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { allWords } from '../../services/words';
+import { WordFinished } from '../WordFinished';
 import { Btns, List, Main } from './style';
 
 export const Word = () => {
@@ -48,25 +49,13 @@ export const Word = () => {
 				<div>
 					<h3>Palavras certas: </h3>
 					<ul>
-						{rights.map((el,i) => {
-							return(
-								<li key={i}>
-									{el}
-								</li>
-							);
-						})}
+						{rights.map((el,i) => <WordFinished key={i} el={el} />)}
 					</ul>
 				</div>
 				<div>
 					<h3>Palavras erradas: </h3>
 					<ul>
-						{wrongs.map((el,i) => {
-							return(
-								<li key={i}>
-									{el}
-								</li>
-							);
-						})}
+						{wrongs.map((el,i) => <WordFinished key={i} el={el} />)}
 					</ul>
 				</div>
 			</List>

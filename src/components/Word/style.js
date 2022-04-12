@@ -95,11 +95,6 @@ h3{
     font-weight: 700;
 }
 
-li{
-    color: #222222;
-    margin-bottom: 2px;
-}
-
 div:first-child{
     background-color: rgb(0,128,0, 0.7);
     border-radius: 5px;
