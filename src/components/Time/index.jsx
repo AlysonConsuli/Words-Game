@@ -1,11 +1,12 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 import { Watch } from './style';
+//import { useTimer } from 'react-timer-hook';
 
 export const Time = () => {
 
-	const [time, setTime] = useState('120');
+	/*const [time, setTime] = useState('120');
 	console.log(time);
-	console.log(setTime);
+	console.log(setTime);*/
 
 	return(
 		<Watch>

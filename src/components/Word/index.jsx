@@ -9,7 +9,7 @@ export const Word = () => {
 	});
 	//console.log(words);
 
-	const [word, setWord] = useState('Clique no botão para começar!');
+	const [word, setWord] = useState('');
 
 	function changeWord(){
 		setWord(words[Math.floor(Math.random() * words.length)]);
@@ -28,12 +28,12 @@ export const Word = () => {
 			<article>
 				<h2>A palavra é: </h2>
 				<span>{word}</span>
-				{word === 'Clique no botão para começar!' ?
+				{word === '' ?
 					<button onClick={changeWord} >Start</button>
 					:
 					<button onClick={changeWord} >Pular Palavra</button>}
 			</article>
-			{word !== 'Clique no botão para começar!' &&
+			{word !== '' &&
 			<Btns>
 				<button onClick={() => {
 					setRights([...rights, word]);
@@ -61,7 +61,7 @@ export const Word = () => {
 			</List>
 			<footer>
 				<button onClick={() => {
-					setWord('Clique no botão para começar!');
+					setWord('');
 					setRights([]);
 					setWrongs([]);
 				}} >Restart</button>

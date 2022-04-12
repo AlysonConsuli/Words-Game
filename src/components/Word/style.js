@@ -14,11 +14,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 h1{
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 700;
     color: #222222;
 }
@@ -29,7 +29,7 @@ h2{
 }
 
 span{
-    font-size: 20px;
+    font-size: 60px;
     color: #222222;
     font-weight: 700;
 }
@@ -37,12 +37,12 @@ span{
 button{
     border: none;
     border-radius: 5px;
-    width: 120px;
+    width: 150px;
     height: 30px;
     background-color: #3299CC;
     color: #222222;
     font-family: 'Roboto';
-    font-size: 13px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -51,7 +51,11 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 0px;
+
+    button{
+        margin-top: 20px;
+    }
 }
 
 footer{
@@ -74,10 +78,14 @@ gap: 50px;
 button:first-child{
     background-color: rgb(0,128,0);
     width: 135px;
+    font-size: 24px;
+    color: #ffffff;
 }
 button:nth-child(2){
     background-color: rgb(210,0,0);
     width: 135px;
+    font-size: 24px;
+    color: #ffffff;
 }
 `;
 
@@ -93,6 +101,7 @@ h3{
     margin-bottom: 10px;
     color: #222222;
     font-weight: 700;
+    color: #fff;
 }
 
 div:first-child{
